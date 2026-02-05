@@ -1,78 +1,242 @@
-# 🌊 EY Water Quality Challenge 2026
+<div align="center">
 
-**Forecasting Water Quality Using AI, Satellite Imagery & Environmental Data**
+# 🌊 Forecasting Water Quality in South Africa
+## *Using AI and Satellite Data to Ensure Safe Water for All*
 
-[![Challenge](https://img.shields.io/badge/EY_Challenge-2026-0066cc?style=for-the-badge)](https://challenge.ey.com/)
-[![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)]()
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![EY Challenge 2026](https://img.shields.io/badge/EY_Challenge-2026-FFE600?style=for-the-badge&logo=ey&logoColor=black)](https://challenge.ey.com/)
+[![Status](https://img.shields.io/badge/Status-In_Progress-orange?style=for-the-badge)]()
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)](https://www.snowflake.com/)
+
+**Competition Period:** January 20 - March 13, 2026 | **Prize Pool:** $10,000 USD
+
+[View Challenge](https://challenge.ey.com/) • [Explore Code](#) • [Contact Me](mailto:linusconradm@gmail.com)
 
 ---
 
-## 👨‍💻 About Me
+</div>
+
+## 🚨 The Problem
+
+> *"In 2022, 2.2 billion people lacked access to safely managed drinking water. By 2030, inadequate monitoring could put 4.8 billion people at risk."* — United Nations
+
+Water quality is not just an environmental metric—**it's a matter of survival.** Climate change, urbanization, and pollution are accelerating water contamination worldwide. Yet monitoring remains inadequate, especially in vulnerable regions.
+
+**In South Africa:**
+- Only **59% of water samples** meet "good" quality standards
+- Urban areas like **Cape Town, Pretoria, and Johannesburg** show the poorest water quality
+- Traditional monitoring is **expensive, infrequent, and limited in coverage**
+
+**The solution?** Leverage AI and satellite technology to predict water quality at scale, enabling proactive intervention before contamination impacts communities.
+
+---
+
+## 👨‍💻 About This Project
+
+This repository documents my solution for the **2026 EY AI & Data Challenge**, one of the world's largest data competitions focused on sustainability. The challenge: **build machine learning models to forecast water quality across South Africa's river systems** using satellite imagery and climate data.
+
+### 🎯 Project Goal
+
+Predict three critical water quality parameters:
+1. **Total Alkalinity** - Buffering capacity against pH changes
+2. **Electrical Conductance** - Indicator of dissolved salts/minerals  
+3. **Dissolved Reactive Phosphorus** - Nutrient that causes harmful algal blooms
+
+**Target:** Achieve significantly better than baseline performance (R² > 0.20) on 600 validation samples across 19 rivers.
+
+---
+
+## 💼 My Unique Angle
 
 **Conrad Linus Muhirwe**  
-MS Analytics Student | American University (May 2026)
+*MS Analytics Student, American University (May 2026)*
 
-Bridging 10+ years of banking expertise in audit and compliance with cutting-edge AI/ML capabilities. This challenge combines my domain knowledge in financial risk assessment with emerging skills in predictive modeling and environmental data science.
+I bring a unique combination of **10+ years of banking experience** in audit, compliance, and risk assessment, now paired with emerging **AI/ML capabilities**. This project bridges two worlds:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/your-profile)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github)](https://github.com/LinusConradM)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=flat&logo=gmail&logoColor=white)](mailto:linusconradm@gmail.com)
+**From Banking:** 
+- Risk modeling and spatial pattern analysis
+- Regulatory compliance mindset
+- Financial impact assessment
+
+**To Environmental AI:**
+- Predictive modeling for water quality
+- Geospatial feature engineering
+- Policy-driven decision support
+
+My banking background in **risk assessment** translates directly to identifying high-risk water contamination zones—similar to credit risk geographic clustering but with life-or-death stakes.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/conrad-linus-m/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/LinusConradM)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:linusconradm@gmail.com)
+
+**🎓 Currently seeking:** Data Analyst | Data Scientist | AI Engineer roles
 
 ---
 
 ## 🎯 Challenge Overview
 
-### The Problem
-In 2022, only 73% of the global population had access to safely managed drinking water. Climate change is increasing water stress and pollution through rising temperatures and extreme weather events. The UN warns that inadequate water quality monitoring could put 4.8 billion people at risk by 2030.
+### The Mission
 
-### The Goal
-Build AI models to forecast water quality across rivers, lakes, and streams using:
-- 🛰️ **Landsat Satellite Imagery** - Spectral data capturing water properties
-- 🌡️ **TerraClimate Data** - Weather and environmental variables
-- 📊 **Historical Water Quality Measurements** - Ground truth data
+Develop machine learning models to:
 
-### Impact
-- Predict water safety for human health
-- Reveal effects of climate and environmental shifts
-- Inform data-driven policies for communities worldwide
+- ✅ **Predict** water quality parameters at unmeasured locations
+- ✅ **Identify** key environmental and climate drivers of water quality
+- ✅ **Enable** proactive water management decisions
+- ✅ **Scale** solutions to benefit vulnerable communities worldwide
 
-**Competition Period:** January 20 - March 13, 2026  
-**Prize Pool:** $10,000 USD  
-**Participants:** 45,000+ from 146 countries
+### Why It Matters
+
+- 🌍 **Global Impact:** Addresses UN Sustainable Development Goal 6 (Clean Water & Sanitation)
+- 🔬 **Scientific Innovation:** Combines satellite remote sensing with AI for environmental monitoring
+- 🏆 **Competition Scale:** 45,000+ participants from 146 countries
+- 💰 **Real Stakes:** $10,000 prize pool + career opportunities with EY
+
+### Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| **People without safe water (2022)** | 2.2 billion |
+| **People at risk by 2030** | 4.8 billion |
+| **South Africa samples meeting quality standards** | 59% |
+| **Water bodies globally with "good" quality** | 56% |
 
 ---
 
-## 🔬 My Approach
+## 📊 Challenge Specifications
+
+### Dataset Overview
+
+**Training Data:** South Africa Rivers (2011-2015)
+
+- 📍 **27,957 samples** across **162 locations** and **86 rivers**
+- 📅 **9,319 unique measurements** (location + date combinations)
+- 🎯 **3 water quality parameters** per sample
+
+**Validation Data:** Different South Africa Regions
+
+- 📍 **600 samples** across **24 locations** and **19 rivers**  
+- 📅 **200 unique measurements** to predict
+- 🏆 **Goal:** Predict all 3 parameters with high accuracy
+
+### Target Variables
+
+| Parameter | Unit | "Good" Threshold | Training Data Quality | Key Drivers |
+|-----------|------|------------------|----------------------|-------------|
+| **Total Alkalinity** | mg/L | 20-200 | 78% good | Geology, mining, urban runoff |
+| **Electrical Conductance (EC)** | uS/cm | <800 | 84% good | Salinity, agriculture, wastewater |
+| **Dissolved Reactive Phosphorus (DRP)** | ug/L | <100 | 84% good | Agricultural runoff, sewage |
+
+### Feature Data Sources
+
+**🛰️ Landsat 8/9 Satellite Imagery**
+- 30-meter spatial resolution
+- Spectral bands + vegetation indices (NDVI, NDWI)
+- Cloud-filtered scenes
+- Proxy for urbanization and agricultural impact
+
+**🌡️ TerraClimate Environmental Data**
+- 4-kilometer spatial resolution
+- 14 climate variables (temperature, precipitation, soil moisture, etc.)
+- Monthly data from 1958-present
+- Hydrological balance indicators
+
+**➕ Additional Open-Source Data Allowed**
+
+### Evaluation Criteria
+
+**Primary Metric:** Mean R² score across all three water quality parameters
+```
+Final Score = (R²_Alkalinity + R²_EC + R²_DRP) / 3
+```
+
+**Competition Structure:**
+
+1. 🏃 **All Participants:** Compete on leaderboard (unlimited submissions)
+2. 🥈 **Top 10:** Semi-finalists (model review: compliance + innovation + efficiency)
+3. 🥇 **Top 5:** Finalists (business plan + video presentation required)
+
+**Baseline to Beat:** R² = 0.20 (provided benchmark model)
+
+---
+
+## 📈 Model Performance Tracking
+
+### Current Status
+
+| Metric | Current | Target | Status |
+|--------|---------|--------|--------|
+| **Mean R² Score** | TBD | > 0.40 | 🔄 In Progress |
+| **Leaderboard Rank** | TBD | Top 10 | 🎯 Goal |
+| **Experiments Completed** | 0 | 15+ | 📊 Planning |
+
+### Experiment Log
+
+| Experiment ID | Date | Model Type | Features | Mean R² | Rank | Notes |
+|---------------|------|------------|----------|---------|------|-------|
+| **BASELINE** | TBD | Linear Regression | Basic satellite + climate | 0.20 | - | Starting point |
+| **EXP-001** | TBD | - | - | TBD | TBD | - |
+| **EXP-002** | TBD | - | - | TBD | TBD | - |
+
+*For detailed experiment tracking, see [EXPERIMENTS.md](./experiments/EXPERIMENTS.md)*
+
+---
+
+## 🔬 Approach & Methodology
 
 ### Phase 1: Data Exploration ✅ (In Progress)
-- [ ] Analyze water quality training dataset structure
-- [ ] Explore Landsat satellite features (spectral bands, vegetation indices)
-- [ ] Examine TerraClimate environmental variables (temperature, precipitation, soil moisture)
-- [ ] Identify missing data patterns and outliers
-- [ ] Understand temporal and spatial distributions
+- [x] Review challenge documentation
+- [ ] Run baseline benchmark model
+- [ ] Exploratory data analysis (EDA)
+- [ ] Understand spatial/temporal patterns
+- [ ] Identify data quality issues
 
-### Phase 2: Feature Engineering (Upcoming)
-- [ ] Extract spectral indices (NDVI, NDWI, turbidity proxies)
-- [ ] Create temporal features (seasonality, trends, lag variables)
-- [ ] Engineer spatial features (location clusters, proximity measures)
-- [ ] Aggregate climate data (rolling averages, anomalies)
-- [ ] Domain-specific features informed by banking risk assessment methodologies
+### Phase 2: Feature Engineering 🔄 (Planned)
+- [ ] **Spectral indices:** NDVI, NDWI, turbidity proxies
+- [ ] **Spatial features:** Distance to urban centers, agriculture, water bodies
+- [ ] **Temporal features:** Seasonality, rainfall patterns, lag variables
+- [ ] **Climate anomalies:** Deviations from historical norms
+- [ ] **Domain-specific:** Banking risk assessment-inspired features
 
-### Phase 3: Model Development (Upcoming)
-- [ ] **Baseline:** Implement benchmark model
-- [ ] **Linear Models:** Ridge, Lasso regression with feature selection
-- [ ] **Tree-Based:** Random Forest, XGBoost, LightGBM
-- [ ] **Deep Learning:** Neural networks for complex patterns (if compute allows)
-- [ ] **Ensemble:** Stacking/blending top performers
+### Phase 3: Model Development 📅 (Upcoming)
+- [ ] Baseline comparison (Linear, Ridge, Lasso)
+- [ ] Tree-based models (Random Forest, XGBoost, LightGBM)
+- [ ] Parameter-specific optimization
+- [ ] Ensemble methods
+- [ ] Hyperparameter tuning
 
-### Phase 4: Optimization & Validation (Upcoming)
-- [ ] Hyperparameter tuning (Grid Search, Bayesian Optimization)
-- [ ] Cross-validation strategy (time-series aware splits)
-- [ ] Feature selection and dimensionality reduction
-- [ ] Model interpretability (SHAP values, feature importance)
-- [ ] Final ensemble and submission
+### Phase 4: Validation & Submission 🎯 (Final Week)
+- [ ] Cross-validation with spatial awareness
+- [ ] Model interpretability (SHAP values)
+- [ ] Final ensemble selection
+- [ ] Generate predictions for validation set
+- [ ] Submit to leaderboard
+
+### Phase 5: Business Plan (If Top 5) 🏆
+- [ ] 4-page written document
+- [ ] 5-minute video presentation
+- [ ] Scaling strategy
+- [ ] Socioeconomic impact analysis
+- [ ] Policy recommendations
+
+---
+
+## 🛠️ Technical Stack
+
+### Core Technologies
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
+
+### ML & Data Science
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-337AB7?style=for-the-badge)
+
+### Visualization
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-7db0bc?style=for-the-badge)
 
 ---
 
@@ -80,184 +244,226 @@ Build AI models to forecast water quality across rivers, lakes, and streams usin
 ```
 EY-Water-Quality-Challenge-2026/
 │
-├── 📓 Notebooks
-│   ├── getting_started_notebook.ipynb
-│   ├── BENCHMARK_MODEL_NOTEBOOK_SNOWFLAKE.ipynb
-│   ├── landsat_demo_notebook_snowflake.ipynb
-│   ├── TERRACLIMATE_DEMONSTRATION_NOTEBOOK_SNOWFLAKE.ipynb
-│   └── [MY_SOLUTION.ipynb] (coming soon)
+├── 📓 notebooks/
+│   ├── 00_getting_started.ipynb                    # Challenge overview & setup
+│   ├── 01_eda_water_quality.ipynb                  # Data exploration
+│   ├── 02_baseline_model.ipynb                     # Benchmark (R²=0.20)
+│   ├── 03_feature_engineering.ipynb                # Feature creation
+│   ├── 04_model_experiments.ipynb                  # Algorithm testing
+│   └── 05_final_model.ipynb                        # Best model & predictions
 │
-├── 📊 Data
-│   ├── water_quality_training_dataset.csv
-│   ├── landsat_features_training.csv
-│   ├── landsat_features_validation.csv
-│   ├── terraclimate_features_training.csv
-│   └── terraclimate_features_validation.csv
+├── 📊 data/
+│   ├── water_quality_training_dataset.csv          # Training labels
+│   ├── landsat_features_training.csv               # Satellite features (train)
+│   ├── terraclimate_features_training.csv          # Climate features (train)
+│   ├── *_validation.csv                            # Validation feature sets
+│   └── submission_template.csv                     # Prediction format
 │
-├── 🛠️ Scripts
-│   └── scripts/
+├── 🛠️ src/
+│   ├── feature_engineering.py                      # Feature creation functions
+│   ├── model_utils.py                              # Model training utilities
+│   ├── evaluation.py                               # Metrics & validation
+│   └── visualization.py                            # Plotting functions
 │
-└── 📄 Documentation
-    ├── README.md
-    ├── requirements.txt
-    └── submission_template.csv
+├── 📈 results/
+│   ├── submissions/                                # Leaderboard submissions
+│   ├── model_checkpoints/                          # Saved models
+│   └── figures/                                    # Visualizations
+│
+├── 📝 docs/
+│   ├── EXPERIMENTS.md                              # Detailed experiment log
+│   ├── BUSINESS_PLAN.md                            # Business plan (if finalist)
+│   └── REFERENCES.md                               # Citations & resources
+│
+├── README.md                                       # This file
+├── requirements.txt                                # Python dependencies
+└── .gitignore                                      # Git ignore rules
 ```
-
----
-
-## 🛠️ Tech Stack
-
-### Core Technologies
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white)
-![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
-
-### Data Science & ML
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-337AB7?style=for-the-badge)
-
-### Visualization
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
-
-### Data Sources
-- **Landsat 8/9 Satellite Imagery** - Multi-spectral remote sensing data
-- **TerraClimate** - University of Idaho climate and hydrology dataset
-- **Ground Measurements** - Historical water quality indices
-
----
-
-## 📊 Results & Performance
-
-*Will be updated as models are developed and evaluated*
-
-### Model Performance
-
-| Model | MAE ↓ | RMSE ↓ | R² ↑ | Notes |
-|-------|-------|--------|------|-------|
-| Baseline | TBD | TBD | TBD | Simple linear model |
-| Random Forest | TBD | TBD | TBD | Tree-based ensemble |
-| XGBoost | TBD | TBD | TBD | Gradient boosting |
-| Final Ensemble | TBD | TBD | TBD | Best performers combined |
-
-### Leaderboard Position
-- **Current Rank:** TBD
-- **Score:** TBD
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Python 3.8 or higher
-- Snowflake account (120-day trial via EY Challenge)
-- Jupyter Notebook
-- Git
+```bash
+- Python 3.8+
+- Jupyter Notebook or JupyterLab
+- Snowflake account (120-day free trial via EY Challenge)
+- 16GB+ RAM recommended
+```
 
 ### Installation
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/LinusConradM/EY-Water-Quality-Challenge-2026.git
 cd EY-Water-Quality-Challenge-2026
 
-# Install dependencies
+# 2. Create virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# Launch Jupyter Notebook
+# 4. Launch Jupyter Notebook
 jupyter notebook
 ```
 
-### Quick Start
-1. Open `getting_started_notebook.ipynb` for data exploration
-2. Run `BENCHMARK_MODEL_NOTEBOOK_SNOWFLAKE.ipynb` for baseline model
-3. Explore `landsat_demo_notebook_snowflake.ipynb` and `TERRACLIMATE_DEMONSTRATION_NOTEBOOK_SNOWFLAKE.ipynb`
+### Quick Start Guide
+
+1. **Start with `00_getting_started.ipynb`**
+   - Understand the challenge
+   - Load and inspect datasets
+   - Run basic sanity checks
+
+2. **Run the baseline model `02_baseline_model.ipynb`**
+   - Establish starting performance (R² = 0.20)
+   - Understand submission format
+   - Make your first leaderboard submission
+
+3. **Explore data `01_eda_water_quality.ipynb`**
+   - Visualize spatial patterns
+   - Identify temporal trends
+   - Find correlations
+
+4. **Engineer features `03_feature_engineering.ipynb`**
+   - Create spectral indices
+   - Build spatial features
+   - Generate temporal features
+
+5. **Experiment and improve `04_model_experiments.ipynb`**
+   - Try different algorithms
+   - Tune hyperparameters
+   - Track performance
 
 ---
 
-## 💡 Key Insights & Learnings
+## 💡 Key Insights & Hypotheses
 
-*Will document findings as the project progresses*
+### Spatial Patterns Observed
+
+- 🔴 **Poor water quality:** Urban centers (Cape Town, Johannesburg, Pretoria)
+- 🟢 **Good water quality:** Eastern regions (Durban, Kruger National Park)
+- 💡 **Hypothesis:** Urbanization and mining are primary pollution drivers
+
+### Temporal Patterns Expected
+
+- 🌧️ Seasonal rainfall variations should impact all three parameters
+- 📅 Lag effects: Previous months' climate affects current water quality
+- 🔄 Drought periods (low PDSI) may concentrate pollutants
+
+### Feature Importance Predictions
+
+**Most Likely Important:**
+1. Distance to urban centers / population density
+2. Proximity to agricultural land
+3. Recent precipitation (1-3 month lag)
+4. Vegetation health (NDVI)
+5. Seasonal indicators
 
 ---
 
-## 🔄 Project Timeline
+## 🌟 Why This Project Matters
 
-- **Week 1 (Jan 20-26):** ✅ Environment setup, data exploration
-- **Week 2 (Jan 27-Feb 2):** 🔄 Feature engineering, baseline model
-- **Week 3-6 (Feb 3-Mar 2):** Model development and optimization
-- **Week 7 (Mar 3-9):** Final ensemble and validation
-- **Week 8 (Mar 10-13):** Final submission and documentation
+> *"Water quality is not just an environmental metric—it is a cornerstone of public health and urban sustainability."*
+
+### Real-World Impact
+
+**If my model achieves Top 5:**
+- ✅ Provides open-source tool for water quality monitoring
+- ✅ Enables early warning for contamination events
+- ✅ Informs policy decisions in vulnerable regions
+- ✅ Reduces reliance on expensive traditional monitoring
+
+### Personal Growth
+
+This challenge is helping me:
+- 🎓 Apply classroom ML theory to real-world sustainability problems
+- 🛰️ Gain experience with satellite data and geospatial analysis
+- ☁️ Build proficiency in Snowflake cloud platform
+- 📊 Develop end-to-end ML project management skills
+
+### Career Alignment
+
+Combines my:
+- **Past:** Banking risk assessment expertise
+- **Present:** MS Analytics studies at American University
+- **Future:** Data science career in environmental or financial sectors
 
 ---
 
-## 📚 Resources
+## 📚 Resources & References
 
-### Challenge Resources
+### Official Challenge Resources
 - [EY Challenge Portal](https://challenge.ey.com/)
 - [Snowflake Developer Guide](https://www.snowflake.com/en/developers/guides/ey-ai-and-data-challenge/)
-- [Original Repository](https://github.com/Snowflake-Labs/EY-AI-and-Data-Challenge)
+- [Original Snowflake Repository](https://github.com/Snowflake-Labs/EY-AI-and-Data-Challenge)
 
 ### Technical Documentation
-- [Landsat Data User Handbook](https://www.usgs.gov/landsat-missions/landsat-data-users-handbook)
+- [Landsat Data Handbook](https://www.usgs.gov/landsat-missions/landsat-data-users-handbook)
 - [TerraClimate Documentation](https://www.climatologylab.org/terraclimate.html)
-- [Snowflake ML Documentation](https://docs.snowflake.com/en/developer-guide/snowpark-ml/index)
+- [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/)
+
+### Academic References
+1. Ilic et al. (2025). *Enhancing monitoring for river water quality: satellite data and ML.* Blue-Green Systems 7(2):338-352.
+2. Nakkazi et al. (2024). *Linking land use and precipitation to water quality in Lake Victoria.* Environmental Monitoring 196:1104.
 
 ---
 
 ## 🤝 Connect & Collaborate
 
-Interested in data science, AI/ML, environmental analytics, or financial technology? Let's connect!
+I'm actively seeking **Data Analyst, Data Scientist, and AI Engineer** opportunities starting May 2026.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LinusConradM)
+**Interested in:**
+- Environmental data science & sustainability
+- Financial analytics & risk modeling
+- AI/ML for social impact
+- Geospatial analysis
+
+**Let's connect:**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LinusConradM)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:linusconradm@gmail.com)
 
-**Open to:**
-- Data Analyst positions
-- Data Scientist roles  
-- AI Engineer opportunities
-- Collaborations on ML/AI projects
+---
+
+## 🔄 Project Timeline
+
+- **Week 1 (Jan 20-26):** ✅ Setup, baseline model, EDA
+- **Week 2 (Jan 27-Feb 2):** 🔄 Feature engineering, initial improvements
+- **Week 3-6 (Feb 3-Mar 2):** Model experimentation & optimization
+- **Week 7 (Mar 3-9):** Final ensemble, validation
+- **Week 8 (Mar 10-13):** Business plan (if Top 5) & final submission
+
+**Next Milestone:** Run baseline model and establish starting R² score
 
 ---
 
 ## 📝 License & Acknowledgments
 
 ### License
-- Challenge materials: Copyright © 2026 EY
-- Snowflake scripts: Copyright © 2026 Snowflake Inc. (Apache 2.0 License)
-- Original repository: [Snowflake-Labs/EY-AI-and-Data-Challenge](https://github.com/Snowflake-Labs/EY-AI-and-Data-Challenge)
+- **Challenge Materials:** © 2026 EY
+- **Snowflake Scripts:** © 2026 Snowflake Inc. (Apache 2.0)
+- **Original Repository:** [Snowflake-Labs/EY-AI-and-Data-Challenge](https://github.com/Snowflake-Labs/EY-AI-and-Data-Challenge)
 
 ### Acknowledgments
-- **EY AI & Data Challenge Program** for organizing this competition
-- **Snowflake** for providing the ML platform and infrastructure
+- **EY AI & Data Challenge Program** for organizing this vital competition
+- **Snowflake** for providing cloud ML infrastructure
 - **American University Kogod School of Business** for academic support
-- **Harmonia Holdings Group** for foundational AI/ML experience
-
----
-
-## 🌟 Why This Project Matters
-
-This challenge addresses one of the most pressing global issues: access to safe drinking water. By leveraging AI and satellite technology, we can:
-
-- 🔍 **Monitor** water quality at scale across remote locations
-- ⚠️ **Predict** potential contamination events before they impact communities
-- 📈 **Track** the effects of climate change on water resources
-- 🎯 **Guide** policy decisions with data-driven insights
-- 🌍 **Support** UN Sustainable Development Goal 6: Clean Water and Sanitation
+- **Harmonia Holdings Group** for foundational AI/ML training
 
 ---
 
 <div align="center">
 
-**🌊 Clean Water for All 🌍**
+## 🌊 Clean Water for All 🌍
 
-*Building a better working world through AI and data innovation*
+*Every model improvement brings us closer to protecting vulnerable communities worldwide.*
 
-[![EY Challenge](https://img.shields.io/badge/EY_AI_&_Data_Challenge-2026-0066cc?style=flat-square)](https://challenge.ey.com/)
-[![UN SDG 6](https://img.shields.io/badge/UN_SDG-6:_Clean_Water-4C9F38?style=flat-square)](https://sdgs.un.org/goals/goal6)
+[![UN SDG 6](https://img.shields.io/badge/UN_SDG-6:_Clean_Water_&_Sanitation-4C9F38?style=flat-square)](https://sdgs.un.org/goals/goal6)
+[![EY Ripples](https://img.shields.io/badge/EY_Ripples-Impact_1B_Lives-FFE600?style=flat-square)](https://www.ey.com/en_gl/corporate-responsibility/ey-ripples)
 
-**Challenge Period:** January 20 - March 13, 2026
+**Last Updated:** February 5, 2026
 
 </div>
