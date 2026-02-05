@@ -6,7 +6,7 @@
 [![EY Challenge 2026](https://img.shields.io/badge/EY_Challenge-2026-FFE600?style=for-the-badge&logo=ey&logoColor=black)](https://challenge.ey.com/)
 [![Status](https://img.shields.io/badge/Status-In_Progress-orange?style=for-the-badge)]()
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)](https://www.snowflake.com/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
 
 **Competition Period:** January 20 - March 13, 2026 | **Prize Pool:** $10,000 USD
 
@@ -38,6 +38,7 @@ This repository documents my solution for the **2026 EY AI & Data Challenge**, o
 ### 🎯 Project Goal
 
 Predict three critical water quality parameters:
+
 1. **Total Alkalinity** - Buffering capacity against pH changes
 2. **Electrical Conductance** - Indicator of dissolved salts/minerals  
 3. **Dissolved Reactive Phosphorus** - Nutrient that causes harmful algal blooms
@@ -54,11 +55,13 @@ Predict three critical water quality parameters:
 I bring a unique combination of **10+ years of banking experience** in audit, compliance, and risk assessment, now paired with emerging **AI/ML capabilities**. This project bridges two worlds:
 
 **From Banking:** 
+
 - Risk modeling and spatial pattern analysis
 - Regulatory compliance mindset
 - Financial impact assessment
 
 **To Environmental AI:**
+
 - Predictive modeling for water quality
 - Geospatial feature engineering
 - Policy-driven decision support
@@ -129,12 +132,14 @@ Develop machine learning models to:
 ### Feature Data Sources
 
 **🛰️ Landsat 8/9 Satellite Imagery**
+
 - 30-meter spatial resolution
 - Spectral bands + vegetation indices (NDVI, NDWI)
 - Cloud-filtered scenes
 - Proxy for urbanization and agricultural impact
 
 **🌡️ TerraClimate Environmental Data**
+
 - 4-kilometer spatial resolution
 - 14 climate variables (temperature, precipitation, soil moisture, etc.)
 - Monthly data from 1958-present
@@ -156,6 +161,150 @@ Final Score = (R²_Alkalinity + R²_EC + R²_DRP) / 3
 3. 🥇 **Top 5:** Finalists (business plan + video presentation required)
 
 **Baseline to Beat:** R² = 0.20 (provided benchmark model)
+
+---
+
+## 📦 Data & Resources
+
+### Development Environment
+
+**Selected Platform:** 💻 **General Platform** (Local Python Environment)
+
+**My Setup:**
+
+- Local development on MacBook Pro
+- Python 3.8+ with Jupyter Notebook
+- Version control with Git/GitHub
+- Full control over code and experiments
+
+---
+
+### 📊 Official Datasets
+
+#### 🎯 Target Dataset
+
+**Training Data:** `water_quality_training_dataset.csv`
+
+- **Parameters:** Total Alkalinity, Electrical Conductance (EC), Dissolved Reactive Phosphorus (DRP)
+- **Coverage:** Multiple river locations in South Africa (2011-2015)
+- **Size:** 27,957 samples across 162 locations and 86 rivers
+- **Purpose:** Train and validate models
+
+**Submission Template:** `submission_template.csv`
+
+- **Points to Predict:** 200 unique (location + date) combinations
+- **Required:** Predictions for all 3 water quality parameters
+- **Format:** CSV file for leaderboard submission
+
+---
+
+#### 🛰️ Feature Datasets (Examples Provided)
+
+Participants may use **any publicly available datasets**. The challenge provides:
+
+**1. Landsat Level-2 Satellite Data**
+
+- **Source:** NASA/USGS via Microsoft Planetary Computer
+- **Resolution:** 30 meters
+- **Revisit:** Every 8-16 days
+- **Features:** Spectral bands, vegetation indices (NDVI, NDWI), cloud filtering
+- **Use Case:** Land use, urbanization, vegetation density
+
+**2. TerraClimate Environmental Data**
+
+- **Source:** University of Idaho via Microsoft Planetary Computer
+- **Resolution:** 4 kilometers
+- **Temporal Coverage:** 1958-present, monthly
+- **Variables:** 14 climate parameters (temperature, precipitation, soil moisture, etc.)
+- **Use Case:** Climate drivers, hydrological balance
+
+**Additional Data Sources Allowed:**
+
+- ✅ Must be publicly available and free
+- ✅ Must be documented and referenced in model
+- ✅ Suitable for geospatial feature extraction
+
+---
+
+### 📓 Notebook Resources
+
+#### Official Challenge Notebooks
+
+| Notebook | Purpose | Status |
+|----------|---------|--------|
+| `Benchmark_Model_Notebook.ipynb` | Baseline model (R²=0.20) | ⏳ To Run |
+| `Landsat_Data_Extraction_Notebook.ipynb` | Extract Landsat features | 📋 Reference |
+| `TerraClimate_Data_Extraction_Notebook.ipynb` | Extract TerraClimate features | 📋 Reference |
+| `Landsat_Demonstration_Notebook.ipynb` | Cloud filtering examples | 📚 Tutorial |
+| `TerraClimate_Demonstration_Notebook.ipynb` | Climate data access demo | 📚 Tutorial |
+
+---
+
+### 📚 Supplementary Materials
+
+#### Official Guidance
+- 📄 **Participant Guidance PDF** - Detailed overview of water quality parameters and modeling suggestions
+- 🎥 **How to Get Started Video** - Platform setup walkthrough
+- 🎥 **Tips for Success Video** - Best practices from organizers
+
+#### Working Files
+- 📊 `water_quality_training_dataset.csv` - Training labels
+- 🛰️ `landsat_features_training.csv` - Pre-extracted Landsat features (training)
+- 🛰️ `landsat_features_validation.csv` - Pre-extracted Landsat features (validation)
+- 🌡️ `terraclimate_features_training.csv` - Pre-extracted TerraClimate features (training)
+- 🌡️ `terraclimate_features_validation.csv` - Pre-extracted TerraClimate features (validation)
+- 📝 `submission_template.csv` - Prediction format template
+
+---
+
+### 🗂️ Data Directory Structure
+```
+data/
+├── raw/                                    # Original datasets
+│   ├── water_quality_training_dataset.csv
+│   └── submission_template.csv
+│
+├── features/                               # Pre-extracted features
+│   ├── landsat_features_training.csv
+│   ├── landsat_features_validation.csv
+│   ├── terraclimate_features_training.csv
+│   └── terraclimate_features_validation.csv
+│
+├── processed/                              # My engineered features
+│   ├── spatial_features.csv
+│   ├── temporal_features.csv
+│   └── combined_features.csv
+│
+└── submissions/                            # Leaderboard submissions
+    ├── submission_baseline.csv             # Baseline (R²=0.20)
+    ├── submission_v1.csv
+    └── submission_v2.csv
+```
+
+---
+
+### ⚠️ Important Data Rules
+
+**What You CAN Use:**
+
+- ✅ Any publicly available, free dataset
+- ✅ Additional satellite data (Sentinel-2, MODIS, etc.)
+- ✅ Topographic data (elevation, slope)
+- ✅ Land use/cover datasets
+- ✅ Climate reanalysis products
+
+**What You CANNOT Use:**
+
+- ❌ Proprietary/paid datasets
+- ❌ Data requiring authentication/licensing
+- ❌ Future data (post-2015 for training locations)
+- ❌ Validation set labels (obviously!)
+
+**Attribution Requirements:**
+
+- 📝 Document all data sources in your model
+- 📝 Provide links to datasets used
+- 📝 Explain how features were derived
 
 ---
 
@@ -185,6 +334,7 @@ Final Score = (R²_Alkalinity + R²_EC + R²_DRP) / 3
 
 ### Phase 1: Data Exploration ✅ (In Progress)
 - [x] Review challenge documentation
+- [x] Set up repository structure
 - [ ] Run baseline benchmark model
 - [ ] Exploratory data analysis (EDA)
 - [ ] Understand spatial/temporal patterns
@@ -222,21 +372,31 @@ Final Score = (R²_Alkalinity + R²_EC + R²_DRP) / 3
 
 ## 🛠️ Technical Stack
 
-### Core Technologies
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+### Development Environment
+![Python](https://img.shields.io/badge/Python_3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)
-![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
+![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
 
 ### ML & Data Science
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-337AB7?style=for-the-badge)
+![LightGBM](https://img.shields.io/badge/LightGBM-02569B?style=for-the-badge)
+
+### Geospatial & Satellite Data
+![GeoPandas](https://img.shields.io/badge/GeoPandas-139C5A?style=for-the-badge)
+![Rasterio](https://img.shields.io/badge/Rasterio-4051B5?style=for-the-badge)
+![xarray](https://img.shields.io/badge/xarray-3776AB?style=for-the-badge)
 
 ### Visualization
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge)
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 ![Seaborn](https://img.shields.io/badge/Seaborn-7db0bc?style=for-the-badge)
+
+### Version Control
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ---
 
@@ -245,39 +405,55 @@ Final Score = (R²_Alkalinity + R²_EC + R²_DRP) / 3
 EY-Water-Quality-Challenge-2026/
 │
 ├── 📓 notebooks/
-│   ├── 00_getting_started.ipynb                    # Challenge overview & setup
-│   ├── 01_eda_water_quality.ipynb                  # Data exploration
-│   ├── 02_baseline_model.ipynb                     # Benchmark (R²=0.20)
-│   ├── 03_feature_engineering.ipynb                # Feature creation
-│   ├── 04_model_experiments.ipynb                  # Algorithm testing
-│   └── 05_final_model.ipynb                        # Best model & predictions
+│   ├── official/                                   # Official challenge notebooks
+│   │   ├── Benchmark_Model_Notebook.ipynb
+│   │   ├── Landsat_Data_Extraction_Notebook.ipynb
+│   │   ├── TerraClimate_Data_Extraction_Notebook.ipynb
+│   │   ├── Landsat_Demonstration_Notebook.ipynb
+│   │   └── TerraClimate_Demonstration_Notebook.ipynb
+│   │
+│   └── my_work/                                    # My custom notebooks
+│       ├── 01_eda_analysis.ipynb
+│       ├── 02_feature_engineering.ipynb
+│       ├── 03_model_experiments.ipynb
+│       └── 04_final_model.ipynb
 │
 ├── 📊 data/
-│   ├── water_quality_training_dataset.csv          # Training labels
-│   ├── landsat_features_training.csv               # Satellite features (train)
-│   ├── terraclimate_features_training.csv          # Climate features (train)
-│   ├── *_validation.csv                            # Validation feature sets
-│   └── submission_template.csv                     # Prediction format
+│   ├── raw/
+│   │   ├── water_quality_training_dataset.csv
+│   │   └── submission_template.csv
+│   ├── features/
+│   │   ├── landsat_features_training.csv
+│   │   ├── landsat_features_validation.csv
+│   │   ├── terraclimate_features_training.csv
+│   │   └── terraclimate_features_validation.csv
+│   ├── processed/
+│   │   └── [my engineered features]
+│   └── submissions/
+│       └── [leaderboard submissions]
 │
 ├── 🛠️ src/
+│   ├── data_loader.py                              # Data loading utilities
 │   ├── feature_engineering.py                      # Feature creation functions
 │   ├── model_utils.py                              # Model training utilities
 │   ├── evaluation.py                               # Metrics & validation
 │   └── visualization.py                            # Plotting functions
 │
 ├── 📈 results/
-│   ├── submissions/                                # Leaderboard submissions
-│   ├── model_checkpoints/                          # Saved models
+│   ├── models/                                     # Saved model files
+│   ├── predictions/                                # Prediction outputs
 │   └── figures/                                    # Visualizations
 │
 ├── 📝 docs/
 │   ├── EXPERIMENTS.md                              # Detailed experiment log
-│   ├── BUSINESS_PLAN.md                            # Business plan (if finalist)
+│   ├── DATA_DICTIONARY.md                          # Feature documentation
+│   ├── Participant_Guidance.pdf                    # Official guidance
 │   └── REFERENCES.md                               # Citations & resources
 │
 ├── README.md                                       # This file
 ├── requirements.txt                                # Python dependencies
-└── .gitignore                                      # Git ignore rules
+├── .gitignore                                      # Git ignore rules
+└── LICENSE                                         # Apache 2.0
 ```
 
 ---
@@ -288,8 +464,8 @@ EY-Water-Quality-Challenge-2026/
 ```bash
 - Python 3.8+
 - Jupyter Notebook or JupyterLab
-- Snowflake account (120-day free trial via EY Challenge)
 - 16GB+ RAM recommended
+- Git for version control
 ```
 
 ### Installation
@@ -300,7 +476,8 @@ cd EY-Water-Quality-Challenge-2026
 
 # 2. Create virtual environment (recommended)
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # On Mac/Linux
+# venv\Scripts\activate  # On Windows
 
 # 3. Install dependencies
 pip install -r requirements.txt
@@ -311,30 +488,26 @@ jupyter notebook
 
 ### Quick Start Guide
 
-1. **Start with `00_getting_started.ipynb`**
-   - Understand the challenge
-   - Load and inspect datasets
-   - Run basic sanity checks
+1. **Download Challenge Data**
+   - Download `General.ZIP` from EY Challenge portal
+   - Extract official notebooks to `notebooks/official/`
+   - Extract data files to `data/raw/` and `data/features/`
 
-2. **Run the baseline model `02_baseline_model.ipynb`**
-   - Establish starting performance (R² = 0.20)
-   - Understand submission format
+2. **Run the baseline model**
+   - Open `notebooks/official/Benchmark_Model_Notebook.ipynb`
+   - Execute all cells
+   - Record your baseline R² score
    - Make your first leaderboard submission
 
-3. **Explore data `01_eda_water_quality.ipynb`**
-   - Visualize spatial patterns
-   - Identify temporal trends
-   - Find correlations
+3. **Explore demonstration notebooks**
+   - `Landsat_Demonstration_Notebook.ipynb` - Satellite data techniques
+   - `TerraClimate_Demonstration_Notebook.ipynb` - Climate data access
 
-4. **Engineer features `03_feature_engineering.ipynb`**
-   - Create spectral indices
-   - Build spatial features
-   - Generate temporal features
-
-5. **Experiment and improve `04_model_experiments.ipynb`**
-   - Try different algorithms
-   - Tune hyperparameters
-   - Track performance
+4. **Start your own analysis**
+   - Create notebooks in `notebooks/my_work/`
+   - Begin with EDA and feature engineering
+   - Experiment with different models
+   - Track all experiments systematically
 
 ---
 
@@ -355,6 +528,7 @@ jupyter notebook
 ### Feature Importance Predictions
 
 **Most Likely Important:**
+
 1. Distance to urban centers / population density
 2. Proximity to agricultural land
 3. Recent precipitation (1-3 month lag)
@@ -370,6 +544,7 @@ jupyter notebook
 ### Real-World Impact
 
 **If my model achieves Top 5:**
+
 - ✅ Provides open-source tool for water quality monitoring
 - ✅ Enables early warning for contamination events
 - ✅ Informs policy decisions in vulnerable regions
@@ -378,14 +553,16 @@ jupyter notebook
 ### Personal Growth
 
 This challenge is helping me:
+
 - 🎓 Apply classroom ML theory to real-world sustainability problems
 - 🛰️ Gain experience with satellite data and geospatial analysis
-- ☁️ Build proficiency in Snowflake cloud platform
-- 📊 Develop end-to-end ML project management skills
+- 💻 Develop end-to-end ML project management skills
+- 📊 Build a portfolio-worthy project for career transition
 
 ### Career Alignment
 
 Combines my:
+
 - **Past:** Banking risk assessment expertise
 - **Present:** MS Analytics studies at American University
 - **Future:** Data science career in environmental or financial sectors
@@ -396,13 +573,14 @@ Combines my:
 
 ### Official Challenge Resources
 - [EY Challenge Portal](https://challenge.ey.com/)
-- [Snowflake Developer Guide](https://www.snowflake.com/en/developers/guides/ey-ai-and-data-challenge/)
-- [Original Snowflake Repository](https://github.com/Snowflake-Labs/EY-AI-and-Data-Challenge)
+- [Challenge Data Description](https://challenge.ey.com/challenges/2026-optimizing-clean-water-supply/data)
+- [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/)
 
 ### Technical Documentation
 - [Landsat Data Handbook](https://www.usgs.gov/landsat-missions/landsat-data-users-handbook)
 - [TerraClimate Documentation](https://www.climatologylab.org/terraclimate.html)
-- [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/)
+- [scikit-learn Documentation](https://scikit-learn.org/stable/)
+- [XGBoost Documentation](https://xgboost.readthedocs.io/)
 
 ### Academic References
 1. Ilic et al. (2025). *Enhancing monitoring for river water quality: satellite data and ML.* Blue-Green Systems 7(2):338-352.
@@ -422,7 +600,7 @@ I'm actively seeking **Data Analyst, Data Scientist, and AI Engineer** opportuni
 
 **Let's connect:**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/conrad-linus-m/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LinusConradM)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:linusconradm@gmail.com)
 
@@ -444,14 +622,14 @@ I'm actively seeking **Data Analyst, Data Scientist, and AI Engineer** opportuni
 
 ### License
 - **Challenge Materials:** © 2026 EY
-- **Snowflake Scripts:** © 2026 Snowflake Inc. (Apache 2.0)
-- **Original Repository:** [Snowflake-Labs/EY-AI-and-Data-Challenge](https://github.com/Snowflake-Labs/EY-AI-and-Data-Challenge)
+- **My Code:** Apache 2.0 License
+- **Original Challenge Repository:** [Snowflake-Labs/EY-AI-and-Data-Challenge](https://github.com/Snowflake-Labs/EY-AI-and-Data-Challenge)
 
 ### Acknowledgments
 - **EY AI & Data Challenge Program** for organizing this vital competition
-- **Snowflake** for providing cloud ML infrastructure
 - **American University Kogod School of Business** for academic support
 - **Harmonia Holdings Group** for foundational AI/ML training
+- **Microsoft Planetary Computer** for satellite data access
 
 ---
 
